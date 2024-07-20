@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.example.openinappassignment.presentation.screens.NoNetworkScreen
+import com.example.openinappassignment.presentation.screens.network.NoNetworkScreen
 import com.example.openinappassignment.presentation.screens.dashboard.Dashboard
 import com.example.openinappassignment.presentation.ui.theme.OpeninAppAssignmentTheme
 import dagger.hilt.android.AndroidEntryPoint

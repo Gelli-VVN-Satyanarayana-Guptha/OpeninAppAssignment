@@ -20,18 +20,12 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LargeTopAppBar
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.MediumTopAppBar
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -48,7 +42,6 @@ import com.bumptech.glide.integration.compose.GlideImage
 import com.example.openinappassignment.R
 import com.example.openinappassignment.domain.model.DashboardData
 import com.example.openinappassignment.domain.model.LinksList
-import com.example.openinappassignment.presentation.widgets.Analytics
 import com.example.openinappassignment.presentation.widgets.Chart
 import com.example.openinappassignment.presentation.widgets.CustomButton
 import com.example.openinappassignment.presentation.widgets.CustomNavigationBar

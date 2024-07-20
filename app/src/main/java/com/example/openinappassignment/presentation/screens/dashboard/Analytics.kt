@@ -1,4 +1,4 @@
-package com.example.openinappassignment.presentation.widgets
+package com.example.openinappassignment.presentation.screens.dashboard
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.horizontalScroll
