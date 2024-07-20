@@ -1,5 +1,6 @@
 package com.example.openinappassignment.presentation.screens.dashboard
 
+import android.util.Log
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -21,7 +22,17 @@ class DashboardViewModel @Inject constructor (
 
     private fun loadDashboardData() {
         viewModelScope.launch {
-            dashboardData.value = dashboardApi.getDashboardData().toDashboardData()
+            try {
+                val dashboardData = dashboardApi.getDashboardData()
+                this@DashboardViewModel.dashboardData.value = dashboardData.toDashboardData()
+            } catch (e: Exception) {
+                // Handle error
+                Log.e(TAG, "Error loading dashboard data", e)
+            }
         }
+    }
+
+    companion object {
+        const val TAG = "DashboardViewModel"
     }
 }

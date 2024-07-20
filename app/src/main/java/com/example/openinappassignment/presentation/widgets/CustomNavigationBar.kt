@@ -45,7 +45,8 @@ fun CustomNavigationBar() {
                     ) {
                         Icon (
                             painter = painterResource(item),
-                            contentDescription = key
+                            contentDescription = key,
+                            tint = if (isSelected) Color.Black else Color.Gray
                         )
                     } },
                 label = {
